@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -12,4 +12,5 @@ export class ListComponent {
   deleteHeroe() {
     this.delhero = this.heroes.pop();
   }
+
 }

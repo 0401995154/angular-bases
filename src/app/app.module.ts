@@ -12,5 +12,6 @@ import { DbzModule } from './dbz/dbz.module';
   imports: [BrowserModule, HeroesModule, DbzModule],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}

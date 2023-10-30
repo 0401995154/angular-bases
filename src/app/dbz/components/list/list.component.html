@@ -1,12 +1,7 @@
  <h4>Lista de personajes</h4>
     <ul>
-      <li class="nav-item">
-        <a class="nav-link active" href="#" aria-current="page">Active link</a>
+      <li class="nav-item" *ngFor="let item of characterList">
+        <a class="nav-link active" href="#" aria-current="page">Personaje: {{item.name}} <br> <strong>Poder: {{item.power}}</strong></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled link</a>
-      </li>
+     
     </ul>

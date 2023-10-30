@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bases';
 
-
+  prueba: string[] = ['asd', 'asda', 'prueba'];
 }

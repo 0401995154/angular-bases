@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.css']
+  styleUrls: ['./counter.component.css'],
 })
 export class CounterComponent {
+  @Input()
+  listapersonas: String[] = [];
 
   counter = 0;
 

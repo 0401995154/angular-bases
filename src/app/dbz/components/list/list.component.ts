@@ -15,7 +15,7 @@ export class ListComponent {
 
   onDeleteCharacter(id?: string) {
     //si viene o no viene el id
-    //si no viene nada me retorna
+    //si no viene nada me retorna 
     if (!id) return;
     console.log(id);
     this.onDeleteIndex.emit(id);

@@ -1,3 +1,4 @@
+import { DragonballzService } from '../services/dragonballz.service';
 import { Character } from './../interfaces/character.inteface';
 import { Component, OnInit } from '@angular/core';
 
@@ -6,14 +7,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'main-page.component.html',
 })
 export class MainComponent {
-  characters: Character[] = [
-    {
-      name: 'Krilin',
-      power: 1000,
-    },
-    { 
-      name: 'Goku',
-      power: 9500,
-    },
-  ];
+  constructor ( public dbzServices: DragonballzService) {
+  }
 }

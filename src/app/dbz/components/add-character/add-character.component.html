@@ -1,11 +1,12 @@
 <h2 class="text-center">Agregar personaje</h2>
-<form>
+<form (ngSubmit)="emitCharacter()">
   <div class="mb-3">
     <label for="" class="form-label">Nombre</label>
     <input
       type="text"
+      [(ngModel)]="persona.name"
       class="form-control"
-      name=""
+      name="name"
       id=""
       aria-describedby="helpId"
       placeholder="Ingrese el nombre del personaje"
@@ -14,9 +15,10 @@
   <div class="mb-3">
     <label for="" class="form-label">Poder</label>
     <input
+      [(ngModel)]="persona.power"
       type="number"
       class="form-control"
-      name=""
+      name="power"
       id=""
       aria-describedby="helpId"
       placeholder="Ingrese la cantidad de poder del personaje"
